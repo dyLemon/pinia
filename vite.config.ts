@@ -8,6 +8,9 @@ import vueJsx from "@vitejs/plugin-vue-jsx";
 export default defineConfig({
   server: {
     hmr: true,
+    cors: true,
+    open: true,
+    host: "localhost",
   },
   plugins: [vue(), vueJsx()],
   resolve: {
