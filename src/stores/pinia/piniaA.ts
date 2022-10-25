@@ -44,18 +44,18 @@ export const piniaA = defineStore("piniaA", {
   /**
    * 数据持久化，开启缓存
    */
-  // persist: {
-  //   //是否开始缓存，true就默认对整个store的state进行sessionStorage储存
-  //   enabled: true,
-  //   strategies: [
-  //     {
-  //       //自定义缓存的key值
-  //       key: "myDogName",
-  //       //储存方式，默认是 sessionStorage
-  //       storage: localStorage,
-  //       //指定缓存的字段
-  //       paths: ["piniaName"],
-  //     },
-  //   ],
-  // },
+  persist: {
+    //是否开始缓存，true就默认对整个store的state进行sessionStorage储存
+    enabled: true,
+    strategies: [
+      {
+        //自定义缓存的key值
+        key: "myDogName",
+        //储存方式，默认是 sessionStorage
+        storage: localStorage,
+        //指定缓存的字段
+        paths: ["piniaName"],
+      },
+    ],
+  },
 });

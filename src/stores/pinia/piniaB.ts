@@ -6,7 +6,6 @@ export const piniaB = defineStore("piniaB", {
       piniaBName: "我是仓库B",
     };
   },
-
   actions: {
     setPiniaAData(name: string, age: number) {},
   },

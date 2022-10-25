@@ -1,7 +1,6 @@
 <script setup lang="ts">
 //vuex
 import { useStore } from "vuex";
-
 const { state, commit, dispatch, getters } = useStore();
 
 //使用计算属性
